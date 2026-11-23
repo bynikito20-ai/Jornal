@@ -6,17 +6,10 @@ Cuaderno de bitácora del proyecto. Una entrada por sesión de trabajo.
 
 **Cómo se usa.** Dos minutos al final de cada sesión, antes de cerrar el portátil. No lo dejes para el día siguiente: los matices se pierden.
 
-**Los tres archivos y para qué es cada uno:**
-
-| Archivo | Responde a |
-|---|---|
-| `DIARIO.md` | Qué hice y cuándo |
-| `DECISIONES.md` | Por qué lo hice así |
-| `SIGUIENTE.md` | Por dónde sigo (una línea, se sobrescribe) |
 
 ---
 
-## 2026-11-23 · domingo · ~2 h
+## 2026-11-23 · Lunes · ~2 h
 
 **Hecho**
 - Cuenta de MongoDB Atlas creada. Cluster gratuito M0 `jornal` en AWS, región París.
@@ -34,9 +27,6 @@ Cuaderno de bitácora del proyecto. Una entrada por sesión de trabajo.
 - Los cambios en `.env.local` no se recargan solos — hay que parar y relanzar `npm run dev`.
 - En serverless hay que cachear la conexión o se abre una nueva en cada petición.
 
-**Pendiente**
-- Añadir `MONGODB_URI` a las variables de entorno de Vercel y redesplegar.
-- Borrar la carpeta `jornal` vacía que quedó de la reorganización.
 
 ---
 
