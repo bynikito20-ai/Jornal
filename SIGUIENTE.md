@@ -1,13 +1,11 @@
-FASE 3 - Los maestros. Crear los modelos de Mongoose segun MODELO-DATOS.md.
+FASE 3 (continuacion) - Alta y edicion de trabajadores desde la web.
 
-1. models/Cargo.ts        -> nombre, orden, activo
-2. models/Trabajador.ts   -> nombre, apellidos, dni, cargoId, activo,
-                             fechaAlta, fechaBaja
-3. Script de datos de prueba: 3 cargos y 5 trabajadores INVENTADOS
-4. Pagina que liste los trabajadores leyendo de Atlas
+Hasta ahora solo LEO datos. Toca poder ESCRIBIRLOS sin el seed:
+1. Formulario de alta en /trabajadores/nuevo
+2. Server Action que valide y guarde
+3. Edicion y baja logica (activo: false, nunca borrar)
+4. Listado de obras y su CRUD
 
-Estado: Fase 1 terminada. App desplegada en jornal-beta-kohl.vercel.app
-y conectada a Atlas en local y en produccion.
-
-Regla: hasta que exista el login, en la base de datos solo datos
-inventados. Ver D-011.
+Pendiente de preguntar a mi padre:
+- ¿Las obras pertenecen a una sociedad concreta? (D-012)
+- ¿El IBAN hace falta en la aplicacion o lo tiene la gestoria? (D-008)

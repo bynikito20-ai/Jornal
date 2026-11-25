@@ -9,6 +9,31 @@ Cuaderno de bitácora del proyecto. Una entrada por sesión de trabajo.
 
 ---
 
+## 2026-11-25 · miércoles · ~3 h
+
+**Hecho**
+- Modelos: Empresa, Cargo, Tarifa y Trabajador.
+- Descubierto que hay DOS sociedades (una en extincion). Añadido
+  empresaId al trabajador. Ver D-012.
+- Seed con datos inventados: 2 empresas, 4 cargos, 4 tarifas,
+  5 trabajadores.
+- Pagina /trabajadores leyendo de Atlas con populate de cargo y empresa.
+- **Circuito completo cerrado**: base de datos → modelo → servidor →
+  navegador, en local y en produccion.
+
+**Aprendido**
+- cargoId guarda una referencia (como una clave foranea), no el cargo
+  entero. populate() lo resuelve al leer.
+- El _id lo pone MongoDB solo, no se declara en el schema.
+- El precio no va en Cargo sino en Tarifa con vigencia, o los informes
+  antiguos se reescribirian al subir un sueldo.
+- Las fechas se guardan YYYY-MM-DD y se muestran DD/MM/YYYY. Con otro
+  formato de guardado, el filtro por mes del informe devolveria basura.
+- "Cannot find module" casi siempre es el servidor de TypeScript
+  desactualizado: Ctrl+Shift+P → Restart TS Server.
+- En el App Router la carpeta es la URL y el archivo DEBE llamarse
+  page.tsx (o route.ts para endpoints).
+
 ## 2026-11-23 · Lunes · ~2 h
 
 **Hecho**
